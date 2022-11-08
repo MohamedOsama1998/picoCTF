@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+
+import sys, string
+
+
+# Validate input
+if len(sys.argv) != 2:
+	print("Usage: decrypt.py [ciphertext filename]\nExiting...\n")
+	exit(1)
+
+
+# Read ciphertext from a file
+def readCipher(cname):
+	try:
+		with open(cname, "r") as ifile:
+			ciphertext = ifile.readline().strip()
+	except:
+		print(f'Error occured while trying to read the file {cname}\nExiting...\n')
+		exit(1)
+	return ciphertext
+
+
+# Decode ciphertext using the provided key
+def decode(cipher, key):
+
+
+
+# Read ciphertext and key from files, decode cipher and print it
+def main():
+
+
+
+# Kick off
+if __name__ == "__main__":
+	main()
+else:
+	print("Please run this script directly\nExiting...\n")
+	exit(1)
